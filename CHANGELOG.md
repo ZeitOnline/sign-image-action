@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/ZeitOnline/sign-image-action/compare/v1.0.0...v1.0.1) (2024-09-04)
+
+
+### Bug Fixes
+
+* add shell to step ([61ed8d6](https://github.com/ZeitOnline/sign-image-action/commit/61ed8d6fc528d29402b06668ee45301ce0439c49))
+
 ## 1.0.0 (2024-09-04)
 
 
