@@ -1,0 +1,23 @@
+name: ZON image signing action
+description: A composite action to sign images with cosign
+
+inputs:
+  repository:
+    description: The OCI repository where the image to be signed resides
+    required: true
+    default: europe-west3-docker.pkg.dev/zeitonline-engineering/docker-zon
+  image_name:
+    description: The name of the image to be signed
+    required: true
+  digest:
+    description: The digest of the image to be signed
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+  - name: cosign-installer
+    uses: sigstore/cosign-installer@4959ce089c160fddf62f7b42464195ba1a56d382 # v3.6.0
+  - name: Sign image
+    run: |
+      cosign sign --yes ${{ inputs.repository }}/${{ inputs.image_name }}@${{ inputs.digest }}
