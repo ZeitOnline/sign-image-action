@@ -8,8 +8,8 @@
 
 ## Summary
 
-This composite action install the `cosign` CLI tool and uses it to sign images. It is up to the user to provide authentication to the
-relecant registry, if needed. In ZEIT ONLINE building workflows this is provided by the [Baseproject action](https://github.com/ZeitOnline/gh-action-baseproject/).
+This composite action installs the `cosign` CLI tool and uses it to sign images. It is up to the user to provide authentication to the
+relevant registry, if needed. In ZEIT ONLINE building workflows this is provided by the [Baseproject action](https://github.com/ZeitOnline/gh-action-baseproject/).
 
 ## Example Usage
 
